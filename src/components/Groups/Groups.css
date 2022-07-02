@@ -1,0 +1,32 @@
+.section-groups{
+    padding : 20px;
+    margin-top: 50px;
+}
+
+.groups-collection{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.moreGroupButtonContainer{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.moreGroupButton{
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #05386b;
+    color: #05386b;
+    padding: 20px 12px;
+    border-radius: 8px;
+
+}
+
+.moreGroupButton:hover{
+    color : #fff;
+    background-color: #05386b;
+}

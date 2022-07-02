@@ -1,0 +1,66 @@
+header{
+    height : 100vh;
+    background : linear-gradient(rgba(255, 216, 155, 0.7) , rgba(25, 84, 123, 0.6)) , url('../../assests/images/header-background/background1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+
+.heading-box{
+    position: absolute;
+    top: 60%;
+    left: 10%;
+}
+
+.header__heading{
+    color : #fff;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 300;
+    width: 900px;
+    margin-bottom: 20px;
+}
+
+.heading-box__buttonContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width : 320px;
+}
+
+.header__learnMore , .header-link-about{
+    border : 1px solid #05386b;
+    padding : 15px 25px;
+    border-radius: 12px;
+    width : 150px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.5s;
+    opacity : 0.6;
+}
+
+.header__learnMore{
+    background-color: #05386b;
+    color : #fff;
+}
+
+.header__learnMore:hover{
+    background-color: #05386b;
+    color : #fff;
+    opacity: 1.0;
+}
+
+.header-link-about{
+    background-color: #fff;
+    color : #05386b;
+    text-decoration: none;
+}
+
+.header-link-about:hover{
+    background-color: #05386b;
+    color : #fff;
+    opacity: 1.0;
+}

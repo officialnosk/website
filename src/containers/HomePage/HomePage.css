@@ -1,0 +1,27 @@
+.homepage{
+    width : 100%;
+}
+
+section{
+    padding-top : 25px;
+    height : 85vh;
+    margin : 20px 0;
+}
+
+.heading{
+    font-size: 35px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.heading::after{
+    content: "";
+    display: block;
+    width : 100px;
+    height : 2px;
+    background-color: #05386b;
+    text-align: center;
+    margin : 15px auto;
+}
+
+

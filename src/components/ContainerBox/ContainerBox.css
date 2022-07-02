@@ -1,0 +1,43 @@
+.containerBox{
+    width : 300px;
+}
+
+.containerTitle{
+    font-size: 25px;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding : 15px 10px;
+    text-align: center;
+    background-color: #ddd;
+    color: #05386b;
+}
+
+.containerBox__description{
+    background-color: #eee;
+    padding : 20px;
+    text-align: left;
+    color: #05386b;
+    line-height: 145%;
+}
+
+.containerBox__viewButton{
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.viewButton{
+    text-decoration: none;
+    border: 1px solid #05386b;
+    background-color: #05386b;
+    color: #fff;
+    padding: 12px 8px;
+    border-radius: 5px;
+}
+
+.viewButton:hover{
+    background-color: #fff;
+    color : #05386b;
+}
