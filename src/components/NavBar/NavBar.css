@@ -19,10 +19,14 @@
     text-transform: uppercase;
     margin-right: 30px;
     font-weight: 300;
-    border : 2px solid transparent;
+    border : 1px solid transparent;
     padding-bottom: 7px;
+    color: #39b54a;
+    padding : 12px 8px;
+    border-radius: 7px;
 }
 
 .navbar-link-about:hover , .navbar-link-groups:hover , .navbar-link-alumni:hover ,  .navbar-link-events:hover ,  .navbar-link-projects:hover ,  .navbar-link-contact:hover{
-    border-bottom: 2px solid #05386b;
+    background-color: #39b54a;
+    color : #f8d424;
 }

@@ -12,6 +12,7 @@ section{
     font-size: 35px;
     font-weight: 300;
     text-align: center;
+    color : #39b54a;
 }
 
 .heading::after{
@@ -19,9 +20,19 @@ section{
     display: block;
     width : 100px;
     height : 2px;
-    background-color: #05386b;
+    background-color: #f8d424;
     text-align: center;
     margin : 15px auto;
+}
+
+.homepageGap{
+    background-color: #39b54a;
+    width : inherit;
+    overflow: hidden;
+}
+
+.homepageWave{
+    border-bottom : 3px solid #fff; 
 }
 
 

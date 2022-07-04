@@ -1,11 +1,13 @@
 .section-groups{
-    padding : 20px;
+    padding : 20px 0 20px 0;
     margin-top: 50px;
+    position: relative;
+    width : 100vw;
 }
 
 .groups-collection{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: 50px;
 }
 
@@ -16,17 +18,48 @@
     align-items: center;
 }
 
-.moreGroupButton{
+/* .moreGroupButton{
     text-decoration: none;
-    background-color: #fff;
-    border: 1px solid #05386b;
-    color: #05386b;
+    background-color: #39b54a;
+    border: 1px solid #39b54a;
+    color: #f8d424;
     padding: 20px 12px;
     border-radius: 8px;
 
-}
+} */
 
 .moreGroupButton:hover{
-    color : #fff;
-    background-color: #05386b;
+    color : #39b54a;
+    background-color: #f8d424;
+}
+
+.groupsWave{
+    position: absolute;
+    top : 50%;
+    z-index: -1;
+    width : 100%;
+}
+
+.groupBeforeIcon , .groupAfterIcon{
+    position: absolute;
+    background-color: #39b54a;
+    color : #f8d424;
+    border-radius: 50%;
+    padding : 7px;
+    top : 45%;
+    cursor : pointer;
+    transform: scale(1.85);
+    filter: brightness(0.8);
+}
+
+.groupBeforeIcon:hover , .groupAfterIcon:hover{
+    filter: brightness(1.0);
+}
+
+.groupBeforeIcon{
+    left : 2%;
+}
+
+.groupAfterIcon{
+    right : 2%;
 }
