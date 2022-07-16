@@ -1,27 +1,36 @@
-import React from 'react';
+import React , {useState} from 'react';
 import { Link } from 'react-router-dom';
-import './NavBar.css';
+import styles from './NavBar.module.css';
 
 import { colors } from '../../assests/colors/colors';
 
 const NavBar = (props) => {
+  const [sticky , setSticky] = useState(false);
+  const onScrollHandler = () => {
+    if(window.scrollY > 80){
+      setSticky(true);
+    }else{
+      setSticky(false);
+    }
+  }
+  window.addEventListener("scroll" , onScrollHandler);
   return (
-    <div className='navbarContainer'>
+    <div className={sticky?styles.navbarContainerSticky : styles.navbarContainer}>
         {/* Logo */}
-        <Link to="/"><img src={require('../../assests/logo/NOSK_Logo_with_Tagline.png')} className="navbar__logo" alt='nepal open source klub' /></Link>
-        <div className='navbarContainer__items' style={{color : colors.header}}>
+        <Link to="/"><img src={require('../../assests/logo/NOSK_Logo_with_Tagline.png')} className={styles.navbar__logo} alt='nepal open source klub' /></Link>
+        <div className={styles.navbarContainer__items}>
             {/* About */}
-            <Link to='/' className='navbar-link-about'>About</Link>
+            <Link to='/' className={sticky?styles.navbarLinkAboutSticky:styles.navbarLinkAbout}>About</Link>
             {/* Groups Under */}
-            <Link to='/' className='navbar-link-groups'>Groups</Link>
+            <Link to='/' className={sticky?styles.navbarLinkGroupsSticky:styles.navbarLinkGroups}>Groups</Link>
             {/* Alumni */}
-            <Link to='/' className='navbar-link-alumni'>Alumni</Link>
+            <Link to='/alumni' className={sticky?styles.navbarLinkAlumniSticky:styles.navbarLinkAlumni}>Alumni</Link>
             {/* Events */}
-            <Link to='/' className='navbar-link-events'>Events</Link>
+            <Link to='/' className={sticky?styles.navbarLinkEventsSticky:styles.navbarLinkEvents}>Events</Link>
             {/* Projects */}
-            <Link to='/' className='navbar-link-projects'>Projects</Link>
+            <Link to='/' className={sticky?styles.navbarLinkProjectsSticky:styles.navbarLinkProjects}>Projects</Link>
             {/* Contact */}
-            <Link to='#contact' className='navbar-link-contact'>Contact</Link>
+            <Link to='/contact' className={sticky?styles.navbarLinkContactSticky:styles.navbarLinkContact}>Contact</Link>
         </div>
     </div>
   )

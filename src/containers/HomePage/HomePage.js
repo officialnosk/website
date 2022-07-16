@@ -2,7 +2,6 @@ import React , {useState , useRef} from 'react';
 import './HomePage.css';
 
 import Groups from '../../components/Groups/Groups';
-import Contact from '../../components/Contact/Contact';
 import About from '../../components/About/About';
 import Gallery from '../../components/Gallery/Gallery';
 import Timeline from '../../components/Timeline/Timeline';
@@ -51,10 +50,6 @@ const HomePage = () => {
 
       {/* Groups(extended) */}
       <Groups moreGroupsLink="/" />
-
-      {/* Contact */}
-      <Contact />
-
 
       {/* Footer */}
       <footer></footer>

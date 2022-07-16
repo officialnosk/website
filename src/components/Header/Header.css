@@ -32,7 +32,6 @@ header{
 }
 
 .header__learnMore , .header-link-about{
-    border : 1px solid #05386b;
     padding : 15px 25px;
     border-radius: 12px;
     width : 150px;
@@ -43,24 +42,28 @@ header{
 }
 
 .header__learnMore{
-    background-color: #05386b;
-    color : #fff;
+    background-color: #f8d424;
+    color : #39b54a;
+    border : 1px solid #f8d424;
 }
 
 .header__learnMore:hover{
-    background-color: #05386b;
-    color : #fff;
+    background-color: #39b54a;
+    color : #f8d424;
     opacity: 1.0;
+    border-color: #39b54a;
 }
 
 .header-link-about{
-    background-color: #fff;
-    color : #05386b;
+    background-color: #39b54a;
+    color : #f8d424;
     text-decoration: none;
+    border : 1px solid #39b54a;
 }
 
 .header-link-about:hover{
-    background-color: #05386b;
-    color : #fff;
+    background-color: #f8d424;
+    color : #39b54a;
     opacity: 1.0;
+    border : 1px solid #f8d424;
 }

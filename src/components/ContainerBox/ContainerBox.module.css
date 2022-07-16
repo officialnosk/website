@@ -8,20 +8,20 @@
     text-transform: uppercase;
     padding : 15px 10px;
     text-align: center;
-    background-color: #ddd;
-    color: #05386b;
+    background-color: #39b54a;
+    color: #f8d424;
 }
 
 .containerBox__description{
-    background-color: #eee;
+    background-color: #f8d424;
     padding : 20px;
     text-align: left;
-    color: #05386b;
+    color: #39b54a;
     line-height: 145%;
 }
 
 .containerBox__viewButton{
-    background-color: #ddd;
+    background-color: #39b54a;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -30,14 +30,14 @@
 
 .viewButton{
     text-decoration: none;
-    border: 1px solid #05386b;
-    background-color: #05386b;
-    color: #fff;
+    border: 1px solid #f8d424;
+    background-color: #f8d424;
+    color: #39b54a;
     padding: 12px 8px;
     border-radius: 5px;
 }
 
 .viewButton:hover{
-    background-color: #fff;
-    color : #05386b;
+    background-color: #39b54a;
+    color : #f8d424;
 }
