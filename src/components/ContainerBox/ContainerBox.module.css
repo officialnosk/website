@@ -1,5 +1,8 @@
 .containerBox{
-    width : 300px;
+    min-width : 300px;
+    max-width: 300px;
+    margin-left : 105px;
+    margin-right: 105px;
 }
 
 .containerTitle{

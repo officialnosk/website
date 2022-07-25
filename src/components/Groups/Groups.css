@@ -7,16 +7,15 @@
 
 .groups-collection{
     display: flex;
-    justify-content: space-around;
     margin-top: 50px;
+    overflow-x: scroll;
 }
 
-.moreGroupButtonContainer{
-    margin-top: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.groups-collection::-webkit-scrollbar{
+    width: 0;
+    display: none;
 }
+
 
 /* .moreGroupButton{
     text-decoration: none;
@@ -28,10 +27,6 @@
 
 } */
 
-.moreGroupButton:hover{
-    color : #39b54a;
-    background-color: #f8d424;
-}
 
 .groupsWave{
     position: absolute;
@@ -65,3 +60,4 @@
 .groupAfterIcon{
     right : 2%;
 }
+

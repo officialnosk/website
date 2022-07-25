@@ -11,7 +11,7 @@ import {Link} from 'react-router-dom';
 
 const Header = (props) => {
   return (
-    <header>
+    <header ref={props.headerRef}>
         {/* Navbar */}
         <NavBar />
         <NavigateBeforeIcon  style={{fontSize : '60px' , position:'absolute' , top : '50%' , left:'0%' , cursor:'pointer'}} onClick={props.onBeforeIconClicked}/>

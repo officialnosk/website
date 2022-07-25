@@ -1,3 +1,87 @@
-.section-timeline{
-    margin-bottom: 100px;
+
+
+.timelineGap{
+    position: relative;
+}
+
+.timelineFirstWave{
+    background-color : #39b54a;
+    margin-bottom: 0px;
+}
+
+.timelineSecondWave{
+    background-color: #39b54a;
+    margin-top: 0px;
+}
+
+.first , .second , .third , .fourth , .fifth , .sixth , .seventh , .eighth , .ninth , .tenth , .eleventh{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #f8d424;
+    border-radius: 50%;
+    cursor : pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #39b54a;
+}
+
+.first:hover , .second:hover , .third:hover , .fourth:hover , .fifth:hover , .sixth:hover , .seventh:hover , .eighth:hover , .ninth:hover , .tenth:hover , .eleventh:hover{
+    filter: brightness(1.2);
+}
+
+.first{
+    top : 45%;
+    left : 1%;
+}
+
+.second{
+    top : 45%;
+    left : 10%;
+}
+
+.third{
+    top : 45%;
+    left : 19%;
+}
+
+.fourth{
+    top : 45%;
+    left : 28%;
+}
+
+.fifth{
+    top : 45%;
+    left : 37%;
+}
+
+.sixth{
+    top : 45%;
+    left : 46%;
+}
+
+.seventh{
+    top : 45%;
+    left : 55%;
+}
+
+.eighth{
+    top : 45%;
+    left : 64%;
+}
+
+.ninth{
+    top : 45%;
+    left : 73%;
+}
+
+.tenth{
+    top : 45%;
+    left : 82%;
+}
+
+.eleventh{
+    top : 45%;
+    left : 91%;
 }

@@ -1,0 +1,15 @@
+.formContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+}
+
+.contact-form{
+    width : 800px;
+}
+
+/* .form__emailContainer , .form__nameContainer , .form__semesterContainer , .form__batchContainer , .form__shiftContainer , .form__messageContainer{
+    display: flex;
+    justify-content: space-between;
+} */

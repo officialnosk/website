@@ -13,6 +13,7 @@
     z-index: 10000;
     height : 100px;
     background-color: #39b54a;
+    border-bottom: 2px solid #f8d424;
 }
 
 .navbar__logo{

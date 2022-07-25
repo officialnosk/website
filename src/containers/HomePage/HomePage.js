@@ -9,35 +9,35 @@ import Header from '../../components/Header/Header';
 
 const HomePage = () => {
   const [backImageCount , setBackImageCount] = useState(1);
-  // const headerRef = useRef();
+  // console.log(backImageCount);
+  const headerRef = useRef(null);
   const onNextIconClicked = () => {
-    setBackImageCount((image) => {
-      if(image<=5){
-        return image++;
-      }else{
-        return image;
-      }
-    });
-    //console.log(backImageCount);
-    //headerRef.current.style.background = `linear-gradient(rgba(255, 216, 155, 0.7) , rgba(25, 84, 123, 0.6)) , url(../../assests/images/background${backImageCount}.jpg)`;
+    if(backImageCount < 5){
+      let image = backImageCount + 1;
+      setBackImageCount(image);
+    }else{
+      setBackImageCount(backImageCount);
+    }
+    // console.log(backImageCount);
+    // let imageUrl = `../../assests/images/header-background/background2.jpg`;
+    // headerRef.current.style.background = "url(" + imageUrl + ")";
   };
 
   const onBeforeIconClicked = () => {
-    setBackImageCount((image) => {
-      if(image>=1){
-        return image--;
-      }else{
-        return image;
-      }
-    });
-    //console.log(backImageCount);
-    // headerRef.current.style.background = `linear-gradient(rgba(255, 216, 155, 0.7) , rgba(25, 84, 123, 0.6)) , url(../../assests/images/background${backImageCount}.jpg)`;
-  };
-
+    if(backImageCount > 1){
+      let image = backImageCount - 1;
+      setBackImageCount(image);
+    }else{
+      setBackImageCount(backImageCount);
+    }
+    // console.log(backImageCount);
+    // let imageUrl = `../../assests/images/header-background/background1.jpg`;
+    // headerRef.current.style.background = "url(" + imageUrl + ")";
+  }
   return (
     <div className='homepage'>
       {/* header Page with nosk image background */}
-      <Header onBeforeIconClicked={onBeforeIconClicked} onNextIconClicked={onNextIconClicked} />
+      <Header onBeforeIconClicked={onBeforeIconClicked} onNextIconClicked={onNextIconClicked} headerRef={headerRef}/>
 
       {/* About(extended) */}
       <About />

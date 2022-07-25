@@ -1,11 +1,11 @@
 import React from 'react';
-import './Contact.module.css';
+import './Contact.css';
 
 const Contact = () => {
   return (
     <section className='section-contact'>
         <h1 className='heading section-contact__heading'>Contact</h1>
-        <div>
+        <div className="formContainer">
             <form name="contact-form" class="contact-form" method="post"  action='#'>
                 <div className='form__nameContainer'>
                     <div className="nameContainer__label">

@@ -20,15 +20,15 @@ const NavBar = (props) => {
         <Link to="/"><img src={require('../../assests/logo/NOSK_Logo_with_Tagline.png')} className={styles.navbar__logo} alt='nepal open source klub' /></Link>
         <div className={styles.navbarContainer__items}>
             {/* About */}
-            <Link to='/' className={sticky?styles.navbarLinkAboutSticky:styles.navbarLinkAbout}>About</Link>
+            <Link to='/about' className={sticky?styles.navbarLinkAboutSticky:styles.navbarLinkAbout}>About</Link>
             {/* Groups Under */}
-            <Link to='/' className={sticky?styles.navbarLinkGroupsSticky:styles.navbarLinkGroups}>Groups</Link>
+            <Link to='/groups' className={sticky?styles.navbarLinkGroupsSticky:styles.navbarLinkGroups}>Groups</Link>
             {/* Alumni */}
             <Link to='/alumni' className={sticky?styles.navbarLinkAlumniSticky:styles.navbarLinkAlumni}>Alumni</Link>
             {/* Events */}
-            <Link to='/' className={sticky?styles.navbarLinkEventsSticky:styles.navbarLinkEvents}>Events</Link>
+            <Link to='/events' className={sticky?styles.navbarLinkEventsSticky:styles.navbarLinkEvents}>Events</Link>
             {/* Projects */}
-            <Link to='/' className={sticky?styles.navbarLinkProjectsSticky:styles.navbarLinkProjects}>Projects</Link>
+            <Link to='/projects' className={sticky?styles.navbarLinkProjectsSticky:styles.navbarLinkProjects}>Projects</Link>
             {/* Contact */}
             <Link to='/contact' className={sticky?styles.navbarLinkContactSticky:styles.navbarLinkContact}>Contact</Link>
         </div>
