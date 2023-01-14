@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Font-Family: 'Roboto', sans-serif;
+    --bg-color: white;
+    --bg-select: #00337C;
+    --bg--option: #03C988;
+    --color-black: rgb(0, 0, 0);
+    --color-white: rgb(255, 255, 255);
+    --color-crimson: rgb(220, 20, 60);
+    --form-bg: #ffffff;
+
+}
+
+body {
+    font-family: var(--Font-Family);
+    display: flex;
+    flex-direction: column;
+    background-color: #454c5a;
+}
+
+.form {
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    form {
+        border-radius: .3rem;
+        height: 34rem;
+        width: 42rem;
+        border: 1px solid black;
+        background-color: var(--form-bg);
+        -webkit-box-shadow: -4px 9px 39px 8px rgba(48, 217, 124, 1);
+        -moz-box-shadow: -4px 9px 39px 8px rgba(48, 217, 124, 1);
+        box-shadow: -4px 9px 39px 8px rgba(48, 217, 124, 1);
+
+        .top {
+            padding-left: 2rem;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            height: 7rem;
+            width: 100%;
+
+            input {
+                border: none;
+                height: 2rem;
+                background-color: var(--form-bg);
+                width: 25rem;
+                outline: none;
+                border-bottom: .1rem solid rgb(164, 152, 152);
+
+                &:nth-child(1) {
+                    margin-bottom: .4rem;
+                }
+            }
+        }
+
+        .choose {
+            padding-left: 2rem;
+
+            .select {
+                height: 6rem;
+                display: flex;
+                width: 100%;
+
+                .semester {
+                    width: 20rem;
+                    display: flex;
+                    align-items: center;
+
+                    h3 {
+                        padding-right: .3rem;
+                        font-size: 1rem;
+                    }
+
+                    select {
+                        font-size: 1rem;
+                        border-radius: .2rem;
+                        outline: none;
+                        border: none;
+                        padding-left: .5rem;
+                        width: 12rem;
+                        height: 2rem;
+                        color: var(--bg-color);
+                        background-color: var(--bg-select);
+
+                        option {
+                            background-color: var(--bg--option);
+                            color: black;
+                            margin-top: .3rem;
+                            border-bottom: 1px solid black;
+                            font-size: 1rem;
+
+                            &:nth-child(1) {
+                                color: var(--bg-color);
+                                background-color: var(--bg-select);
+                                font-size: 1.3rem;
+                            }
+                        }
+                    }
+                }
+
+                .batch {
+                    width: 18rem;
+                    display: flex;
+                    align-items: center;
+
+                    h3 {
+                        padding-right: .3rem;
+                        font-size: 1rem;
+                    }
+
+                    select {
+                        font-size: 1rem;
+                        border-radius: .2rem;
+                        outline: none;
+                        border: none;
+                        padding-left: .5rem;
+                        width: 12rem;
+                        height: 2rem;
+                        color: var(--bg-color);
+                        background-color: var(--bg-select);
+
+                        option {
+                            background-color: var(--bg--option);
+                            color: black;
+                            margin-top: .3rem;
+                            border-bottom: 1px solid black;
+                            font-size: 1rem;
+
+                            &:nth-child(1) {
+                                color: var(--bg-color);
+                                background-color: var(--bg-select);
+                                font-size: 1.3rem;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .shift {
+                height: 5rem;
+
+                input {
+                    margin-left: 1rem;
+                    height: 1.5rem;
+                    width: 1.5rem;
+                }
+
+                .morning {
+                    font-size: 1rem;
+                    display: flex;
+                }
+
+                .day {
+                    font-size: 1rem;
+                    display: flex;
+                }
+            }
+        }
+
+        .messageArea {
+            width: 100%;
+            overflow: hidden;
+            padding-left: 2rem;
+            height: 10rem;
+
+            textarea {
+                outline: none;
+                height: 10rem;
+                resize: none;
+                width: 100%;
+                padding: 2rem;
+
+                &::placeholder {
+                    padding: 0rem;
+                }
+            }
+        }
+
+        .button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 5rem;
+
+            button {
+                font-size: 1.1rem;
+                font-weight: 600;
+                color: var(--color-white);
+                background-color: var(--color-crimson);
+                cursor: pointer;
+                border-radius: .2rem;
+                border: none;
+                height: 2.4rem;
+                width: 10rem;
+                transition: .3s;
+
+                &:hover {
+                    background-color: var(--color-white);
+                    color: var(--color-crimson);
+                }
+            }
+        }
+    }
+}
